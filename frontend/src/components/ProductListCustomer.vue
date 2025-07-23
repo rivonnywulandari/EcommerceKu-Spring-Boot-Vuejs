@@ -29,7 +29,7 @@
 
                 <div class="input-group" style="max-width: 150px;">
                   <input type="number" v-model.number="product.quantity" min="1" class="form-control" placeholder="Qty">
-                  <button class="btn btn-success" @click="addToCart(product)">Add</button>
+                  <button class="btn btn-success-ecommerceku" @click="addToCart(product)">Add</button>
                 </div>
               </div>
             </div>
@@ -107,5 +107,10 @@ export default {
   aspect-ratio: 1 / 1;         
   object-fit: cover;         
   border-radius: 0.5rem 0 0 0.5rem; 
+}
+
+.btn-success-ecommerceku{
+    color: white;
+    background-color: #D0011B;
 }
 </style>
