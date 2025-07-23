@@ -17,7 +17,7 @@
           <div class="row g-0">
             <!-- Gambar -->
             <div class="col-md-4">
-              <img :src="product.imageUrl" class="img-fluid rounded-start w-100 h-100" style="object-fit: cover;" alt="Product Image">
+              <img :src="product.imageUrl" class="img-square rounded-start w-100 h-100" style="object-fit: cover;" alt="Product Image">
             </div>
 
             <!-- Detail Produk -->
@@ -101,5 +101,11 @@ export default {
 .card-img {
   height: 100%;
   object-fit: cover;
+}
+
+.img-square {
+  aspect-ratio: 1 / 1;         
+  object-fit: cover;         
+  border-radius: 0.5rem 0 0 0.5rem; 
 }
 </style>
